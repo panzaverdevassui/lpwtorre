@@ -12,9 +12,9 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(morgan('dev'));            
 app.use(express.urlencoded({extended: false})); 
 app.use(express.json());
-                          
+                           
 // Global Variables       
-app.use((req, res, next) => {            
+app.use((req, res, next) => {             
     next();    
   });                 
                   
